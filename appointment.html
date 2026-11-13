@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Pradeep Medical Center</title>
+  <meta name="description" content="Book a doctor's appointment at Pradeep Medical Center online in a few simple steps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="Pradeep Medical Center home">
+        <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M17 4h14v13h13v14H31v13H17V31H4V17h13z" fill="#1e63d6"/>
+          <path d="M21 9h6v12h12v6H27v12h-6V27H9v-6h12z" fill="#fff"/>
+          <path d="M23 13h2v10h10v2H25v10h-2V25H13v-2h10z" fill="#5aa7f5"/>
+        </svg>
+        <span class="logo-text"><strong>Pradeep</strong><small>MEDICAL CENTER</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="appointment.html" class="nav-cta">Book Appointment →</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:+911234567890" class="emergency">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/><path d="M15 2a7 7 0 0 1 7 7M15 6a3 3 0 0 1 3 3"/></svg>
+          <span><small>24/7 Emergency</small><b>+91 12345 67890</b></span>
+        </a>
+        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Book an Appointment</h1>
+        <p>Schedule your consultation in under a minute. Our team will call you to confirm.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Book Appointment</div>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How It Works</span>
+          <h2>Simple 4-Step Booking</h2>
+        </div>
+        <div class="grid grid-4">
+          <div class="card"><div class="step-num">1</div><h3>Choose Department</h3><p>Select the speciality that matches your health concern.</p></div>
+          <div class="card"><div class="step-num">2</div><h3>Pick a Date</h3><p>Choose your preferred date for the consultation.</p></div>
+          <div class="card"><div class="step-num">3</div><h3>Get Confirmation</h3><p>Our team calls you to confirm the doctor and time slot.</p></div>
+          <div class="card"><div class="step-num">4</div><h3>Visit Us</h3><p>Arrive 15 minutes early with your ID and previous reports.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section-alt">
+      <div class="container appt">
+        <div class="appt-info">
+          <span class="eyebrow light">Book Appointment</span>
+          <h2>Schedule Your Visit Today</h2>
+          <p>Fill in the form and our patient care team will contact you shortly to confirm your appointment.</p>
+          <ul>
+            <li><b>Mon – Sat</b><span>8:00 AM – 9:00 PM</span></li>
+            <li><b>Sunday</b><span>9:00 AM – 1:00 PM</span></li>
+            <li><b>Emergency</b><span>24 hours / 7 days</span></li>
+            <li><b>Helpline</b><span><a href="tel:+911234567890">+91 12345 67890</a></span></li>
+          </ul>
+        </div>
+        <form class="appt-form" data-wa="911234567890" data-wa-title="Appointment Request" data-success="Thank you, {name}! Please press Send in WhatsApp – we will confirm your appointment shortly.">
+          <div class="field"><label for="name">Full Name</label><input id="name" name="name" required autocomplete="name" /></div>
+          <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" required pattern="[0-9+\s\-]{8,15}" autocomplete="tel" /></div>
+          <div class="field"><label for="age">Age</label><input id="age" name="age" type="number" min="0" max="120" required /></div>
+          <div class="field"><label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select</option><option>Male</option><option>Female</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="dept">Department</label>
+            <select id="dept" name="dept" required>
+              <option value="">Select department</option>
+              <option>General Medicine</option><option>Cardiology</option><option>Neurology</option><option>Orthopedics</option>
+              <option>Pediatrics</option><option>Gynecology</option><option>Ophthalmology</option><option>Dental Care</option>
+            </select>
+          </div>
+          <div class="field"><label for="date">Preferred Date</label><input id="date" name="date" type="date" required /></div>
+          <div class="field full"><label for="msg">Symptoms / Message (optional)</label><textarea id="msg" name="msg" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-wa btn-lg full">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 1c-1-.4-1.9-1.3-2.3-2.3l1-1-1-2z"/></svg>
+            Send Request on WhatsApp
+          </button>
+          <p class="form-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Before your visit -->
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card">
+          <h3>What to Bring</h3>
+          <ul class="checklist sm">
+            <li>Government photo ID</li>
+            <li>Previous prescriptions &amp; reports</li>
+            <li>List of current medicines</li>
+            <li>Insurance card (if applicable)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Appointment Policy</h3>
+          <ul class="checklist sm">
+            <li>Please arrive 15 minutes early</li>
+            <li>Reschedule at least 2 hours in advance</li>
+            <li>Fasting may be needed for some tests</li>
+            <li>One attendant per patient</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Medical Emergency?</h3>
+          <p>Do not wait for an appointment. Come directly to our 24/7 Emergency department or call us immediately.</p>
+          <a href="tel:+911234567890" class="btn btn-primary mt" style="margin-top:20px">Call Emergency</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">
+          <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M17 4h14v13h13v14H31v13H17V31H4V17h13z" fill="#1e63d6"/>
+            <path d="M21 9h6v12h12v6H27v12h-6V27H9v-6h12z" fill="#fff"/>
+            <path d="M23 13h2v10h10v2H25v10h-2V25H13v-2h10z" fill="#5aa7f5"/>
+          </svg>
+          <span class="logo-text"><strong>Pradeep</strong><small>MEDICAL CENTER</small></span>
+        </a>
+        <p>Compassionate care, advanced technology and experienced specialists – committed to better health for every family we serve.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Our Doctors</a>
+        <a href="appointment.html">Book Appointment</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div>
+        <h4>Departments</h4>
+        <a href="departments.html#cardiology">Cardiology</a>
+        <a href="departments.html#neurology">Neurology</a>
+        <a href="departments.html#orthopedics">Orthopedics</a>
+        <a href="departments.html#pediatrics">Pediatrics</a>
+        <a href="departments.html#gynecology">Gynecology</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>123 Main Road, Your City,<br />Tamil Nadu – 600001</p>
+        <p>OPD: Mon – Sat, 8 AM – 9 PM</p>
+        <a href="mailto:info@pradeepmedical.com">info@pradeepmedical.com</a>
+        <a href="tel:+911234567890" class="footer-phone">+91 12345 67890</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Pradeep Medical Center. All rights reserved.</div>
+  </footer>
+
+  <!-- shortcut: placeholder WhatsApp number 911234567890; replace everywhere (also data-wa on forms) -->
+  <a href="https://wa.me/911234567890" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 1c-1-.4-1.9-1.3-2.3-2.3l1-1-1-2z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
